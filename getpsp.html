@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<TITLE>getpsp</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>TC: unsigned getpsp( void )</H1>
+
+<PRE>
+
+
+	- prototype in dos.h
+
+	- returns segment address of the <A HREF="program_segment_prefix.html">PSP</A> using DOS <A HREF="int_21-62.html">INT 21,62</A>
+	- valid only for DOS 3.x
+	- use global variable _psp to get PSP instead for DOS 2.X
+	- MS C uses <A HREF="getpid.html">getpid</A>()
+
+</PRE>
+
+</BODY>
+</HTML>

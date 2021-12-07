@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>chmod</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>int chmod( const char *filename, int permiss)</H1>
+
+<PRE>
+
+
+	- prototype in io.h, also include stat.h
+
+	- changes access mode of file according to mask given by permiss,
+	  where permiss is:
+
+			S_IWRITE
+			S_IREAD
+			S_IWRITE | S_IREAD
+
+	- returns 0 if OK
+		 -1 with errno set to ENOENT or EACCES
+
+</PRE>
+
+</BODY>
+</HTML>

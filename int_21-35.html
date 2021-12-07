@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>int 21,35</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>INT 21,35 - Get Interrupt Vector</H1>
+
+<PRE>
+
+
+	AH = 35h
+	AL = interrupt vector number
+
+
+	on return:
+	ES:BX = pointer to interrupt handler
+
+
+	- standard method for retrieving interrupt vectors
+
+
+	- see	<A HREF="int_21-25.html">INT 21,25</A>
+
+</PRE>
+
+</BODY>
+</HTML>

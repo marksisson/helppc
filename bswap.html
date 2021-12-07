@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>bswap</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>BSWAP - Byte Swap (486+ only)</H1>
+
+<PRE>
+
+
+	Usage:	BSWAP	reg32
+	Modifies flags: none
+
+
+	Changes the byte order of a 32 bit register from big endian to
+	little endian or vice versa.   Result left in destination register
+	is undefined if the operand is a 16 bit register.
+
+
+<B>				 Clocks			Size</B>
+<B>	Operands	 808x  286   386   486		Bytes</B>
+
+	reg32	 	  -	-     -     1	  	  2
+
+
+	- see <A HREF="instruction_timing.html">Instruction Timing</A>
+
+</PRE>
+
+</BODY>
+</HTML>

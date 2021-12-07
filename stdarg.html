@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<TITLE>stdarg</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>Example of variable arguments in C</H1>
+
+<PRE>
+
+	void myprintf( char *format, ... )
+	   {
+	   va_list argptr;
+
+	   va_start ( argptr, format );
+	   vsprintf ( text, format, argptr );
+	   va_end ( argptr );
+	   write (1, text, strlen (text));
+	   }
+</PRE>
+
+</BODY>
+</HTML>

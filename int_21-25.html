@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>int 21,25</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>INT 21,25 - Set Interrupt Vector</H1>
+
+<PRE>
+
+
+	AH = 25h
+	AL = interrupt number
+	DS:DX = pointer to interrupt handler
+
+
+	returns nothing
+
+
+	- provides a safe method for changing interrupt vectors
+
+
+	- see	<A HREF="int_21-35.html">INT 21,35</A>
+
+</PRE>
+
+</BODY>
+</HTML>

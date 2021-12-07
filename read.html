@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>read</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>int read( int handle, char *buf, int size )</H1>
+
+<PRE>
+
+
+	- prototype in io.h
+
+	- reads "size" bytes from file "handle" into "buf"
+	- removes CR's & reports EOF on a Ctrl-Z for text mode file
+	- returns number of bytes read, 0 on EOF, or -1 on error
+
+</PRE>
+
+</BODY>
+</HTML>

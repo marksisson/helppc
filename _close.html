@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>_close</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>TC: int _close( int fh )</H1>
+
+<PRE>
+
+
+	- prototype in io.h
+
+	- closes file fh where fh is file handle from <A HREF="_dos_creat.html">_creat</A>(), <A HREF="_dos_creat.html">creat</A>(),
+	  <A HREF="_dos_creat.html">creatnew</A>(), <A HREF="creattemp.html">creattemp</A>(), <A HREF="strdup.html">dup</A>(), <A HREF="dup2.html">dup2</A>(), <A HREF="_open.html">_open</A>(), or
+	  <A HREF="sopen.html">open</A>().
+	- use <A HREF="fdopen.html">fdopen</A>() to change file handle to file stream.
+	- does not write a Ctrl-Z to a text file on closing
+	- returns 0 if OK;  -1 & errno=EBADF
+	- MS C uses <A HREF="_dos_close.html">_dos_close</A>()
+
+	- see	<A HREF="int_21-3e.html">INT 21,3E</A>
+</PRE>
+
+</BODY>
+</HTML>

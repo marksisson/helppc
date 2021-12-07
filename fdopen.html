@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<TITLE>fdopen</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>FILE *fdopen( int handle, char *type )</H1>
+
+<PRE>
+
+
+	- prototype in dos.h
+
+	- associates a file STREAM with a file HANDLE
+	- handle is returned by <A HREF="_dos_creat.html">creat</A>(), <A HREF="strdup.html">dup</A>(), <A HREF="dup2.html">dup2</A>() or <A HREF="sopen.html">open</A>()
+	- type must match mode of the handle
+	- returns file stream or NULL on error
+	- see	<A HREF="fopen.html">fopen</A>()
+</PRE>
+
+</BODY>
+</HTML>

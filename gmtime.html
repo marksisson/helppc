@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<TITLE>gmtime</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>struct tm *gmtime( const time_t *clock )</H1>
+
+<PRE>
+
+
+	- prototype in time.h
+
+	- clock is a long integer (such as that returned by <A HREF="int_1c.html">time</A>())
+	- returns GMT time in struct tm (see time.h) correcting for time
+	  zone and any daylight savings time
+	- global variable timezone is difference in seconds between GMT
+	  and local standard time
+
+</PRE>
+
+</BODY>
+</HTML>

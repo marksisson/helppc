@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>sbrk</TITLE>
+</HEAD>
+
+<BODY>
+
+
+<H1 ALIGN=Center>void *sbrk( int incr )</H1>
+
+<PRE>
+
+
+	- prototype in alloc.h (malloc.h for MS C)
+
+	- dynamically changes the amount of space allocated to the calling
+	  programs data segment.  Amount of allocated space is increased by
+	  amount incr (can be negative).
+
+	- returns 0 if OK
+		 -1 & errno is set to ENOMEM
+
+</PRE>
+
+</BODY>
+</HTML>
